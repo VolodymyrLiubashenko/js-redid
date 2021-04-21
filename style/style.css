@@ -1,0 +1,133 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
+body {
+  background: grey;
+}
+
+.wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  background: grey;
+  height: 100%;
+}
+
+.content {
+  max-width: 500px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.select p {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: white;
+  margin-bottom: 10px;
+}
+.select select {
+  width: 100px;
+  height: 40px;
+  border: 2px white solid;
+  font-size: 20px;
+  padding-left: 20px;
+  background: #f5ce0c;
+  box-shadow: 2px 2px 7px black;
+}
+
+.result {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  width: 500px;
+  border: solid white 2px;
+  background: black;
+  box-shadow: 2px 2px 7px black;
+}
+.result p {
+  margin: 5px auto;
+  font-size: 20px;
+  color: white;
+  border-bottom: 1px solid #4a4949;
+  letter-spacing: 2px;
+}
+/*# sourceMappingURL=style.css.map */
