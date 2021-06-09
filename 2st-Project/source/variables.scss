@@ -1,0 +1,90 @@
+//Font Colors
+$colorMainFirst: #ffffff;
+$colorMainSecond:#191919;
+$colorMainThird:#22BF95;
+$colorMainFourth:#7F7F7F;
+//Font Sizes
+$h2FZ:42px;
+$h5FZ: 24px;
+$linkFZ:12px;
+$contentFZ:16px;
+$h2MobileFZ:24px;
+$contentMobileFZ:14px;
+$h5MobileFZ: 18px;
+
+
+//Background
+$backgroundMainFirst:#ffffff;
+$backgroundMainSecond:#22BF95;
+$gradientMain:linear-gradient(49deg, rgba(25,195,224,1) 36%, rgba(1,249,114,1) 100%, rgba(255,255,255,0) 100%);
+//hover
+$backgroundHoverDark:#7F7F7F;
+$backgroundHoverLight:#ffffff;
+$hoverlinkColor:#A60000;
+
+
+
+//Mixins
+@mixin posPseudoEelement($t,$l,$x,$y,$b,$w,$h){
+content:"";
+position: absolute;
+top: $t;
+left:$l;
+transform: translate($x,$y);
+background: $b;
+width: $w;
+height: $h;
+}
+
+@mixin flex($d,$j,$a,$w){
+	display: flex;
+	flex-direction: $d;
+	justify-content: $j;
+	align-items:$a;
+	flex-wrap: $w;
+}
+
+
+
+//Templates
+
+%tplButton{
+	display: block;
+	height: 40px;
+	border-radius:20px;
+	text-transform: uppercase;
+	font-family: 'Acme';
+	font-size:$linkFZ;
+	letter-spacing: 2px;
+	position: relative;
+	overflow: hidden;
+	
+}
+%tplLinkButton{
+		border-radius: 20px;
+		display: block;
+		min-height: 40px;
+		font-family: 'Acme';
+		font-size:$linkFZ;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+		line-height: 40px;
+		text-align: center;
+		position: relative;
+		overflow: hidden;
+}
+
+%tplHoverButtonDark{
+	&:after{
+		@include posPseudoEelement(0,100%,0,0,$backgroundHoverDark,30%,100%);
+		
+	}
+}
+
+%tplHoverButtonLight{
+	&:after{
+		@include posPseudoEelement(0,100%,0,0,$backgroundHoverLight,30%,100%);
+		
+	}
+}
+
