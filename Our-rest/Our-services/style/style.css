@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;500;600;700;800;900&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Big Shoulders Display', cursive;
+	 background: radial-gradient(circle, rgba(255,255,255,0.5) 90%, rgba(0,0,0,0.2) 0%, rgba(255,255,255,1) 91%, rgba(65,65,65,1) 100%);
+	font-size: 20px;
+	background-size: contain;
+	overflow-x: hidden;
+	width: 100%;
+	color: black;
+}
+
+
+.ribbon {
+	position: absolute;
+	background: radial-gradient(circle, rgba(255,255,255,1) 90%, rgba(0,0,0,0.2) 0%, rgba(255,255,255,1) 91%, rgba(65,65,65,1) 100%);
+
+	z-index: 999;
+
+}
+
+a {
+	text-decoration: none;
+	font-size: 2vw;
+	color: black;
+
+}
+
+li{
+	position: relative;
+	list-style: none;
+	margin-left: 1vw;
+	margin-right: 2vw;
+	font-size: 2vw;
+	overflow: hidden;
+}
+
+.under{
+	position: absolute;
+	background: black;
+	width: 100%;
+	height: 1px;
+	top: 97%;
+	right: 100%;
+	transition: 1s;
+}
+
+li:hover .under{
+	right: -100%;
+	transition: 1s;
+}
+
+.logo img {
+	position: relative;
+	left: -100vw;
+	height: 8vw;
+	transform: rotate(15deg);
+	animation-name:  mainslide;
+	animation-duration: 0.5s;
+	animation-fill-mode: forwards;
+	animation-delay: 0.0s;
+}
+
+.nav-wrap{
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	
+	width: 100%;
+	height: 10vw;
+	
+}
+
+
+.telephone {
+position: relative;
+left: 40%;
+width: 40%;
+font-size: 3vw;
+animation-name: slide;
+animation-duration: 0.8s;
+animation-fill-mode: ;
+
+}
+
+.navigation {
+	position: relative;
+	top: 5vw;
+	display: flex;
+	flex-direction: row;
+	animation-name: navslide;
+	animation-duration: 0.7s;
+	animation-fill-mode: ;
+
+}
+
+main {
+	position: relative;
+	width: 50%;
+
+}
+
+h1{
+	position: relative;
+	left: -100vw;
+	text-align: center;
+	animation-name:  mainslide;
+	animation-duration: 0.5s;
+	animation-fill-mode: forwards;
+	animation-delay: 0.0s;
+}
+
+
+.first-service{
+	position: relative;
+	left: -100vw;
+	width: 50vw;
+	display: flex;
+	flex-direction: row;
+	justify-content: left;
+	align-items: top;
+	margin-top: 2vw;
+	animation-name:  mainslide;
+	animation-duration: 0.5s;
+	animation-fill-mode: forwards;
+	animation-delay: 0.2s;
+	
+
+}
+.imgday{
+	width: 50%;
+	text-align: center;
+}
+
+.imgday img{
+	width: 50%
+	
+}
+p{
+	width: 50%;
+	text-align: justify;
+}
+
+.second-service{
+	position: relative;
+	width: 50vw;
+	left: -100vw;
+	display: flex;
+	flex-direction: row;
+	justify-content: left;
+	margin-top: 2vw;
+	align-items: top;
+	animation-name:  mainslide;
+	animation-duration: 0.7s;
+	animation-fill-mode: forwards;
+	animation-delay: 0.4s;
+	
+}
+
+.third-service{
+	position: relative;
+	left: -100vw;
+	width: 50vw;
+	display: flex;
+	flex-direction: row;
+	justify-content: left;
+	margin-top: 2vw;
+	align-items: top;
+	margin-bottom: 2vw;
+	animation-name:  mainslide;
+	animation-duration: 0.9s;
+	animation-fill-mode: forwards;
+	animation-delay: 0.6s;
+	}
+
+.feel-free{
+	position: absolute;
+	left: 120%;
+	width:50%;
+	top: 10%;
+	text-align: center;
+	animation-name: slidefoto;
+	animation-duration: 0.7s;
+}
+.ksuha-img img{
+	width: 100%;
+}
+
+.feel-free p{
+	width: 100%;
+	font-size: 2vw;
+}
+.icons{
+	display: flex;
+	justify-content: center;
+	margin-top: 2vw;
+}
+
+.icons a{
+	margin-right: 1vw;
+
+	}
+
+	@keyframes slide {
+	0%{
+		left: 100vw;
+	}
+	100%{
+		left: 40%;
+	}
+}
+
+@keyframes navslide {
+	0%{
+		top: -10vw;
+	}
+	
+	100%{
+		top: 5vw;
+	}
+}
+
+@keyframes mainslide {
+	0%{
+		left: -100vw;
+	}
+	100%{
+		left: 0vw;
+	}
+}
+
+@keyframes slidefoto {
+	0%{
+		left: 100vw;
+	}
+	100%{
+		left: 120%;
+	}
+}
+@keyframes animam {
+	0%{
+		width: 1px; height: 10vw;
+	}
+	30%{
+		width: 100%; height: 10vw; top: 50%;
+	}
+	100%{
+		width: 100%; height: 100%; top: 0%;
+	}
+}

@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;500;600;700;800;900&display=swap');
+
+body {
+	font-family: 'Big Shoulders Display', cursive;
+	font-size: 30px;
+	background-size: contain;
+	overflow-x: hidden;
+	width: 100%;
+	color: black;
+	
+}
+
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.ribbon {
+	position: absolute;
+	background: radial-gradient(circle, rgba(255,255,255,1) 90%, rgba(0,0,0,0.2) 0%, rgba(255,255,255,1) 91%, rgba(65,65,65,1) 100%);
+
+	z-index: 999;
+
+}
+
+
+
+.navbar {
+	position: relative;
+	padding-top: 1%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	
+}
+
+
+.menu {
+	position: relative;
+	overflow: hidden;
+	animation-name: menu;
+	animation-duration: 0.7s;
+}
+
+.view-fotos {
+	position: relative;
+	overflow: hidden;
+	animation-name: menu;
+	animation-duration: 1s;
+}
+
+.under {
+	position: absolute;
+	top: 87%;
+	right: 100%;
+	width: 100%;
+	height: 2px;
+	background-color: black;
+	transition: 0.7s;
+	transition-duration: background-color 0s;
+
+	
+}
+
+
+
+.menu:hover .under {
+	transform: translate(200%,0);
+	transition-duration: 0.7s;
+	}
+
+
+
+.view-fotos:hover .under {
+	transform: translate(200%,0);
+	transition-duration: 0.7s;
+}
+
+a {
+	
+	text-decoration: none;
+	color: black;
+
+}
+
+.rightside-menu-block{
+	position: relative;
+	top: 8vw;
+	font-size: 50px;
+	animation-name: leftside;
+	animation-duration: 0.7s;
+	animation-fill-mode: forwards;
+}
+
+
+
+
+
+
+
+.leftside-menu-block {
+	writing-mode: vertical-rl;
+	position: absolute;
+	left:96%;
+	top: -30vh;
+	
+	animation-name: rightside ;
+	animation-duration: 0.5s;
+	animation-delay: 0.7s;
+	animation-fill-mode: forwards;
+	z-index: 99;
+	overflow: hidden;
+	
+}
+.vertical{
+	position: absolute;
+	top: -100%;
+	left: 5%;
+	width: 2px;
+	height: 100%;
+	background-color: black;
+	transition: 0.7s;
+}
+.vertical-above{
+	position: absolute;
+	top: -100%;
+	left: 90%;
+	width: 2px;
+	height: 100%;
+	background-color: black;
+	transition: 0.7s;
+}
+ 
+ .leftside-menu-block:hover .vertical{
+ 	top: 100%;
+ 	transition: 0.7s;
+ }
+
+.leftside-menu-block:hover .vertical-above{
+ 	top: 100%;
+ 	transition: 0.7s;
+ }
+
+.content {
+	position: relative;
+	display: flex;
+	justify-content: space-around;
+	
+	
+	
+	
+}
+.blockksuha {
+
+	width: 30%;
+}
+
+.about-me{
+	position: relative;
+	top: 100vw;
+	left: -5vw;
+	max-width: 40%;
+	text-align: justify;
+	animation-name: about-me ;
+	animation-duration: 0.5s;
+	animation-delay: 0.7s;
+	animation-fill-mode: forwards;
+}
+
+.ksyuha{
+	position: relative;
+	top: 12vw;
+	left: -100vw;
+	width: 25vw;
+	cursor: pointer;
+	animation-name: ksuhaslide ;
+	animation-duration: 0.5s;
+	animation-delay: 0.7s;
+	animation-fill-mode: forwards;
+}
+
+
+footer {
+	position: absolute;
+	top: 110%;
+	font-size: 5vh;
+	color: white;
+	
+	width: 100vw;
+	
+	
+}
+.contacts {
+
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	
+}
+
+.contacts div {
+	margin-left: 1vw;
+	margin-right: 1vw;
+	
+	
+}
+.contacts i {
+	opacity: 1;
+}
+.contacts i:hover {
+	opacity: 1;
+	transition: 0.5s;
+}
+
+
+
+
+@keyframes backg {
+	0%{
+		height: 20vh; top:40vh;
+	}
+	100%{
+		height: 100vh; top:0vh;
+	}
+	
+}
+
+
+@keyframes menu {
+	0%{
+		top:500vh; left: -600vw; z-index: 9999;
+	}
+	100%{
+		top: 0vh; left: 0vh; z-index: 9999;
+	}
+}
+
+@keyframes leftside {
+	0%{ 
+		top: -30vh; 
+	}
+	100%{
+		top: 8vw; 
+	}
+}
+
+@keyframes rightside {
+	0%{ 
+		top: -30vh; 
+	}
+	100%{
+		top: 40vh; 
+	}
+}
+
+@keyframes ksuhaslide {
+	0%{ 
+		left: -100vw;
+	}
+	100%{
+		left: 5vw; 
+	}
+}
+
+
+@keyframes about-me {
+	0%{ 
+		top: 100vw;
+	}
+	100%{
+		top: 12vw; 
+	}
+}
+
+@keyframes animam {
+	0%{
+		width: 1px; height: 10vw;
+	}
+	30%{
+		width: 100%; height: 10vw; top: 50%;
+	}
+	100%{
+		width: 100%; height: 100%; top: 0%;
+	}
+}

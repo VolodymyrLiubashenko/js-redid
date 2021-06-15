@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;500;600;700;800;900&display=swap');
+
+body {
+	font-family: 'Big Shoulders Display', cursive;
+	 background: radial-gradient(circle, rgba(255,255,255,0.5) 90%, rgba(0,0,0,0.2) 0%, rgba(255,255,255,1) 91%, rgba(65,65,65,1) 100%);
+	font-size: 30px;
+	height: 100vh;
+	width: 100%;
+	overflow: hidden;
+	color: black;
+}
+
+
+.ribbon {
+	position: absolute;
+	background: radial-gradient(circle, rgba(255,255,255,1) 90%, rgba(0,0,0,0.2) 0%, rgba(255,255,255,1) 91%, rgba(65,65,65,1) 100%);
+
+	z-index: 999;
+
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+
+li {
+	position: relative;
+	list-style: none;
+	margin-left: 1vw;
+	margin-right: 2vw;
+	font-size: 2vw;
+	overflow: hidden;
+}
+
+.under {
+	position: absolute;
+	background: black;
+	width: 100%;
+	height: 1px;
+	top: 98%;
+	right: 100%;
+	transition: 1s;
+
+}
+
+li:hover .under{
+	right: -100%;
+	transition: 1s;
+}
+.nav-wrap{
+	position: fixed;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	
+	width: 100%;
+	height: 20vh;
+	z-index: 9999;
+
+
+}
+
+.logo img {
+	position: relative;
+	left: 0vw;
+	top: 0vh;
+	height: 15vh;
+	transform: rotate(15deg);
+
+	
+}
+
+.telephone {
+position: relative;
+left: 40vw;
+top: -5vh;
+font-size: 3vw;
+animation-name: slide;
+animation-duration: 0.5s;
+animation-fill-mode: forwards;
+
+}
+
+.navigation {
+	position: relative;
+	top: 7vh;
+	display: flex;
+	flex-direction: row;
+	animation-name: navslide;
+	animation-duration: 0.3s;
+	animation-fill-mode: forwards;
+
+}
+
+.wrap-main{
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	 
+	width: 100%;
+	height: 60vh;
+	top: 22vh;
+	animation-name: sliderslide;
+	animation-duration: 0.3s;
+	animation-fill-mode: forwards;
+}
+
+
+
+
+.left-arrow {
+	
+	width: 3vw;
+	height: 3vw;
+	border-style: solid;
+	border-top: black;
+	border-left: black;
+	transform: rotate(135deg);
+	cursor: pointer;
+}
+
+
+.right-arrow {
+	
+	width: 3vw;
+	height: 3vw;
+	border-style: solid;
+	border-top: black;
+	border-left: black;
+	transform: rotate(-45deg);
+	cursor: pointer;
+}
+
+.main {
+	border: solid;
+	border-color: black;
+
+	width: 60vw;
+	height: 60vh;
+	overflow: hidden;
+}
+ 
+.main img {
+	position: absolute;
+	display: block;
+	width: 60vw;
+	height: 60vh;
+}
+
+
+
+
+
+
+footer {
+	position: fixed;
+	top: 82%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding-top: 3vh;
+	
+	color: black;
+	padding-bottom: 5vh;
+	margin-top: 1vh;
+	width: 100%;
+	height: 10vh;
+}
+footer a {
+	color: black;
+	margin-right: 1vw;
+	opacity: 0.5;
+	
+}
+footer a:hover {
+	opacity: 1;
+	transition: 0.5s;
+}
+
+.icons{
+	display: flex;
+
+}
+
+.contacts-footer {
+	position: relative;
+	font-size: 20px;
+	animation-name: sliderslide;
+	animation-duration: 0.5s;
+	animation-fill-mode: forwards;
+
+}
+.socmedia{
+	position: relative;
+	animation-name: sliderslide;
+	animation-duration: 0.5s;
+	animation-fill-mode: forwar
+}
+
+
+@keyframes slide {
+	0%{
+		left: 100vw;
+	}
+	100%{
+		left: 40vw;
+	}
+}
+
+@keyframes navslide {
+	0%{
+		top: -10vw;
+	}
+	100%{
+		top: 7vh;
+	}
+}
+
+@keyframes sliderslide {
+	0%{
+		left: -100vw;
+	}
+	100%{
+		left: 0vw;
+	}
+}
+
+@keyframes animam {
+	0%{
+		width: 1px; height: 10vw;
+	}
+	30%{
+		width: 100%; height: 10vw; top: 50%;
+	}
+	100%{
+		width: 100%; height: 100%; top: 0%;
+	}
+}
