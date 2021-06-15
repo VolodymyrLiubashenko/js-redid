@@ -1,0 +1,23 @@
+#red, #green, #blue{
+ width:100px;
+ height:100px;
+ margin:10px;
+}
+#red{
+ background:red;
+}
+#green{
+ background:green;
+}
+#blue{
+ background:blue;
+}
+
+.font {
+	font-size: 50px;
+	padding: 5%;
+	border-radius:none ;
+	background-color: white;
+	border-color: white;
+	border-style: solid;
+}
